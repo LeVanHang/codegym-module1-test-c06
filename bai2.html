@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function insertNumberToArray(arr,x,index) {
+        for (let i = 0; i <= arr.length; i++) {
+            if (i == index) {
+                for (let j = (arr.length - 1); j >= i; j--) {
+                    arr[j + 1] = arr[j];
+                }
+                arr[i] = x;
+            }
+        }
+        return arr;
+    }
+</script>
+</body>
+</html>
